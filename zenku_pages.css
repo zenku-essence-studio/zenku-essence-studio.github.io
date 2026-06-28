@@ -466,6 +466,19 @@ h1 {
 }
 
 .button.secondary {
+  color: var(--slate);
+  background: transparent;
+  border-color: var(--gold);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  background: rgba(203, 164, 128, .14);
+  color: var(--slate-2);
+}
+
+.dark .button.secondary,
+.contact-box .button.secondary {
   color: var(--ivory);
   background: rgba(248, 245, 239, .07);
   border-color: var(--gold);

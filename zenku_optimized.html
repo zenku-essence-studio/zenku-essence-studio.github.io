@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="PKCmUZKWx8pQenaztlwtVWz2rB76YVu0kCkq9oguZCM" />
+  <title>澤奎本質療癒所｜身心安頓．自癒啟動</title>
+  <link rel="icon" type="image/png" href="Logo.png?v=3">
+  <link rel="shortcut icon" type="image/png" href="Logo.png?v=3">
+  <meta name="description" content="澤奎本質療癒所提供靈氣療癒、姓名命名改名、易經卜卦、收驚壓煞與身心安頓服務。">
+  <style>
+    :root {
+      --ink: #1c1c1c;
+      --slate: #2d4051;
+      --slate-2: #243544;
+      --gold: #cba480;
+      --gold-2: #e8d3bc;
+      --ivory: #f8f5ef;
+      --mist: #eef1ed;
+      --sage: #718073;
+      --line: rgba(45, 64, 81, .16);
+      --shadow: 0 18px 40px rgba(28, 28, 28, .14);
+      --radius: 8px;
+      color-scheme: light;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--ivory);
+      font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", Arial, sans-serif;
+      line-height: 1.75;
+      letter-spacing: 0;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(248, 245, 239, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      width: min(1120px, calc(100% - 32px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      color: var(--slate);
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border: 1px solid rgba(203, 164, 128, .75);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: transparent;
+      background: #fffdf8 center / cover no-repeat;
+    }
+
+    .image-mark {
+      background-image: url('zenku-logo.png');
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: #47525b;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      padding: 18px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus {
+      color: var(--slate);
+      border-color: var(--gold);
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-button {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fffdf8;
+      color: var(--slate);
+      place-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .menu-button span,
+    .menu-button::before,
+    .menu-button::after {
+      content: "";
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+      display: block;
+      border-radius: 999px;
+    }
+    .hero {
+      min-height: 690px;
+      color: var(--ivory);
+      background:
+        linear-gradient(90deg, rgba(29, 42, 54, .94), rgba(29, 42, 54, .76) 42%, rgba(29, 42, 54, .38)),
+        url("zenku-main-visual.png") center / cover no-repeat,
+        var(--slate);
+      display: grid;
+      align-items: center;
+    }
+
+    .hero-inner {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 88px 0 76px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--gold-2);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      max-width: 680px;
+      font-size: clamp(38px, 6vw, 76px);
+      font-weight: 500;
+    }
+
+    .hero-copy {
+      max-width: 640px;
+      margin: 24px 0 34px;
+      color: rgba(248, 245, 239, .88);
+      font-size: 19px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .button {
+      min-height: 46px;
+      padding: 10px 18px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .button:hover,
+    .button:focus {
+      transform: translateY(-1px);
+    }
+
+    .button.primary {
+      background: var(--gold);
+      color: #1f2223;
+      border-color: var(--gold);
+    }
+
+    .button.secondary {
+      color: var(--ivory);
+      border-color: rgba(248, 245, 239, .42);
+      background: rgba(248, 245, 239, .07);
+    }
+
+    .section {
+      padding: 92px 0;
+    }
+
+    .section.dark {
+      color: var(--ivory);
+      background: var(--slate);
+    }
+
+    .section.soft {
+      background: var(--mist);
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 520px);
+      gap: 48px;
+      align-items: end;
+      margin-bottom: 42px;
+    }
+
+    .section-title {
+      color: var(--slate);
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 500;
+    }
+
+    .dark .section-title {
+      color: var(--gold-2);
+    }
+
+    .lead {
+      margin: 0;
+      color: #53605c;
+      font-size: 17px;
+    }
+
+    .dark .lead {
+      color: rgba(248, 245, 239, .78);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .service-card {
+      min-height: 310px;
+      padding: 24px;
+      border: 1px solid rgba(203, 164, 128, .34);
+      border-radius: var(--radius);
+      background: rgba(255, 253, 248, .95);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 12px 28px rgba(45, 64, 81, .08);
+    }
+
+    .service-card h3 {
+      color: var(--slate);
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      color: var(--gold);
+      font-weight: 700;
+      margin: 0 0 14px;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: #4d5652;
+    }
+
+    .service-card ul,
+    .plain-list {
+      padding: 0;
+      margin: 22px 0 0;
+      list-style: none;
+    }
+
+    .service-card li,
+    .plain-list li {
+      position: relative;
+      padding-left: 18px;
+      margin-top: 9px;
+      color: #4d5652;
+    }
+
+    .service-card li::before,
+    .plain-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .75em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .text-link {
+      margin-top: 14px;
+      display: inline-flex;
+      color: var(--slate);
+      font-weight: 700;
+    }
+
+    .text-link::after {
+      content: ">";
+      margin-left: 8px;
+      color: var(--gold);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+      gap: 52px;
+      align-items: start;
+    }
+
+    .quote-panel {
+      padding: 34px;
+      border-left: 4px solid var(--gold);
+      background: rgba(255, 253, 248, .08);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .quote-panel p {
+      margin: 0;
+      color: rgba(248, 245, 239, .86);
+      font-size: 18px;
+    }
+
+    .about-copy p {
+      margin: 0 0 18px;
+      color: rgba(248, 245, 239, .78);
+    }
+
+    .credentials {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .credential {
+      padding: 15px 18px;
+      border: 1px solid rgba(248, 245, 239, .14);
+      border-radius: 8px;
+      background: rgba(248, 245, 239, .06);
+      color: rgba(248, 245, 239, .88);
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .detail-block {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fffdf8;
+    }
+
+    .detail-block h3 {
+      color: var(--slate);
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    .detail-block p {
+      margin: 0;
+      color: #4d5652;
+    }
+
+    .booking {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: 38px;
+      align-items: start;
+    }
+
+    .price-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .price-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .price-row span:last-child {
+      color: var(--slate);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .contact-box {
+      padding: 28px;
+      border-radius: var(--radius);
+      background: var(--slate);
+      color: var(--ivory);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box h3 {
+      color: var(--gold-2);
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .contact-box p {
+      margin: 0 0 16px;
+      color: rgba(248, 245, 239, .82);
+    }
+
+    .contact-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 0;
+      border-top: 1px solid rgba(248, 245, 239, .14);
+    }
+
+    .contact-line strong {
+      color: var(--gold-2);
+    }
+
+    .notes-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .note-link {
+      min-height: 104px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fffdf8;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .note-link strong {
+      color: var(--slate);
+    }
+
+    .note-link span {
+      color: var(--sage);
+      font-size: 14px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid rgba(203, 164, 128, .32);
+      border-radius: var(--radius);
+      background: #fffdf8;
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 18px 22px;
+      color: var(--slate);
+      font-weight: 700;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 22px 20px;
+      color: #4d5652;
+    }
+
+    .site-footer {
+      padding: 38px 16px;
+      color: rgba(248, 245, 239, .78);
+      background: var(--slate-2);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .site-footer p {
+      margin: 4px 0;
+    }
+
+    @media (max-width: 900px) {
+      .menu-button {
+        display: grid;
+      }
+
+      .nav {
+        min-height: 62px;
+      }
+
+      .nav-links {
+        position: absolute;
+        top: 62px;
+        left: 0;
+        right: 0;
+        display: none;
+        padding: 10px 24px 22px;
+        background: rgba(248, 245, 239, .98);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .menu-toggle:checked ~ .nav-links {
+        display: grid;
+        gap: 2px;
+      }
+
+      .nav-links a {
+        padding: 12px 0;
+      }
+
+      .hero {
+        min-height: 620px;
+        background:
+          linear-gradient(180deg, rgba(29, 42, 54, .92), rgba(29, 42, 54, .72)),
+          url("zenku-main-visual.png") center / cover no-repeat,
+          var(--slate);
+      }
+
+      .section-head,
+      .split,
+      .booking {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .notes-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    @media (max-width: 620px) {
+      .brand {
+        font-size: 15px;
+      }
+
+      .hero-inner {
+        padding-top: 64px;
+      }
+
+      .hero-copy {
+        font-size: 17px;
+      }
+
+      .section {
+        padding: 66px 0;
+      }
+
+      .service-grid,
+      .detail-grid,
+      .notes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: auto;
+      }
+
+      .price-row,
+      .contact-line {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <!-- SEO-BEGIN -->
+  <link rel="canonical" href="https://zenku-essence-studio.github.io/">
+  <meta name="robots" content="noindex, follow">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="澤奎本質療癒所｜身心安頓．自癒啟動">
+  <meta property="og:description" content="澤奎本質療癒所提供靈氣療癒、姓名命名改名、易經卜卦、收驚壓煞與身心安頓服務。">
+  <meta property="og:url" content="https://zenku-essence-studio.github.io/">
+  <meta property="og:site_name" content="澤奎本質療癒所">
+  <meta property="og:image" content="https://zenku-essence-studio.github.io/zenku-main-visual.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://zenku-essence-studio.github.io/#organization","name":"澤奎本質療癒所","alternateName":"Zenku Essence Studio","url":"https://zenku-essence-studio.github.io/","logo":"https://zenku-essence-studio.github.io/Logo.png","contactPoint":[{"@type":"ContactPoint","contactType":"customer service","url":"https://line.me/R/ti/p/@975nxiqa","availableLanguage":["zh-Hant"]}]},{"@type":"WebSite","@id":"https://zenku-essence-studio.github.io/#website","url":"https://zenku-essence-studio.github.io/","name":"澤奎本質療癒所","publisher":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"},{"@type":"WebPage","@id":"https://zenku-essence-studio.github.io/#webpage","url":"https://zenku-essence-studio.github.io/","name":"澤奎本質療癒所｜身心安頓．自癒啟動","description":"澤奎本質療癒所提供靈氣療癒、姓名命名改名、易經卜卦、收驚壓煞與身心安頓服務。","isPartOf":{"@id":"https://zenku-essence-studio.github.io/#website"},"about":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"}]}
+  </script>
+  <!-- SEO-END --></head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="主導覽">
+      <a class="brand" href="#top" aria-label="回到首頁">
+        <span class="brand-mark image-mark" aria-hidden="true"></span>
+        <span>澤奎本質療癒所</span>
+      </a>
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="開啟選單">
+      <label class="menu-button" for="menu-toggle" aria-label="開啟選單"><span></span></label>
+      <div class="nav-links">
+        <a href="zenku_about.html">關於</a>
+        <a href="zenku_reiki.html">靈氣</a>
+        <a href="zenku_naming.html">姓名</a>
+        <a href="zenku_divination.html">卜卦</a>
+        <a href="zenku_calm.html">收驚</a>
+        <a href="zenku_booking.html">預約</a>
+        <a href="zenku_faq.html">常見問題</a>
+        <a href="zenku_notes.html">療癒隨筆</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="澤奎本質療癒所">
+      <div class="hero-inner">
+        <p class="eyebrow">｜身心安頓．自癒啟動｜</p>
+        <h1>澤奎本質療癒所</h1>
+        <p class="hero-copy">溫和導引能量，安定身心、啟動自癒。以傳統智慧與清明結構，陪你看清、安頓、選擇，走出屬於自己的節拍。</p>
+        <div class="actions">
+          <a class="button primary" href="#booking">預約諮詢</a>
+          <a class="button secondary" href="#services">查看服務</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title">服務項目</h2>
+          <p class="lead">四項服務分別回應身心安頓、名字對齊、方向釐清與氣場回穩。若不確定適合哪一項，也可以先聯繫討論。</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <div>
+              <h3>靈氣療癒</h3>
+              <p class="tagline">身心安頓．自癒啟動</p>
+              <p>源自日本的自然能量療法，透過雙手引導生命能量，協助身心回復平衡與安定。</p>
+              <ul>
+                <li>深層放鬆，減緩壓力與焦慮</li>
+                <li>改善睡眠、情緒與專注力</li>
+                <li>可安排無接觸、遠距方式</li>
+              </ul>
+            </div>
+            <div><p class="tagline">首次體驗 NT$800</p><a class="text-link" href="zenku_reiki.html">了解更多</a></div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <h3>取名改名</h3>
+              <p class="tagline">名字歸位．運勢歸心</p>
+              <p>依命格量身命名，讓名字與人生共振。從八字、生肖、音韻、字義與文化脈絡整合設計。</p>
+              <ul>
+                <li>新生兒命名</li>
+                <li>成人改名</li>
+                <li>既有姓名評估與優化</li>
+              </ul>
+            </div>
+            <div><p class="tagline">命名／改名 NT$3000</p><a class="text-link" href="zenku_naming.html">了解更多</a></div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <h3>卜卦問事</h3>
+              <p class="tagline">看清眼前．識出方向</p>
+              <p>使用傳統《易經》六爻，看見當下狀態與情勢結構，協助你釐清方向。</p>
+              <ul>
+                <li>感情關係與家庭人際</li>
+                <li>職涯發展與合作選擇</li>
+                <li>自我探索與人生方向</li>
+              </ul>
+            </div>
+            <div><p class="tagline">問一事 NT$700</p><a class="text-link" href="zenku_divination.html">了解更多</a></div>
+          </article>
+
+          <article class="service-card">
+            <div>
+              <h3>收驚壓煞</h3>
+              <p class="tagline">安神定魄．平衡氣場</p>
+              <p>以簡儀淨化、重整氣場、穩定神魄為主，無涉祭改或驅邪類儀式。</p>
+              <ul>
+                <li>孩子夜驚、哭鬧或驚嚇後不適</li>
+                <li>成人心神不寧、失眠、無法專注</li>
+                <li>搬家、入厝或經過陰煞之地後不安</li>
+              </ul>
+            </div>
+            <div><p class="tagline">費用隨喜</p><a class="text-link" href="zenku_calm.html">了解更多</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="about">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <p class="eyebrow">關於我們</p>
+            <h2 class="section-title">真正的療癒，從回到自己開始。</h2>
+            <div class="credentials" aria-label="學經歷">
+              <div class="credential">臼井靈氣高階治療師</div>
+              <div class="credential">山醫命相卜傳統五術實修傳承者</div>
+              <div class="credential">NGH 美國催眠學會認證催眠治療師</div>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p>大學時期，在王宇謙博士的指導下初次接觸靈氣，那次經驗改變了我對「療癒」的認識，也成為人生的轉向點。</p>
+            <p>數學教育背景讓我習慣抓邏輯、看結構，也培養出對「本質」的執著與敏銳。後續深入學習易經、姓名學、風水、五術與催眠，將看似玄妙的系統轉化為理解人與問題的工具。</p>
+            <div class="quote-panel">
+              <p>澤者，水也，流動與滋養；奎者，星也，清明與照見。願作那道靜水明星，守護你人生旅途中的每一個轉彎。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title">我們如何陪你</h2>
+          <p class="lead">從釐清問題到安定身心，服務過程重視清楚、溫和與尊重，讓你在被理解的狀態下慢慢回到自己。</p>
+        </div>
+        <div class="detail-grid">
+          <article class="detail-block">
+            <h3>先釐清問題</h3>
+            <p>以你目前的身心狀態、人生處境與想詢問的主題為起點，確認適合的服務方向。</p>
+          </article>
+          <article class="detail-block">
+            <h3>安定身心</h3>
+            <p>服務過程尊重個人感受，不需要誇張儀式，也不取代醫療建議。</p>
+          </article>
+          <article class="detail-block">
+            <h3>回到選擇</h3>
+            <p>不追求預言命運，而是協助你看清當下、理解結構，走得更穩。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="wrap">
+        <div class="booking">
+          <div>
+            <p class="eyebrow">預約｜費用</p>
+            <h2 class="section-title">預約療癒，或先詢問適合的服務。</h2>
+            <p class="lead">若對任何療癒項目有疑問，歡迎與顏老師聯繫。收驚壓煞須擇日擇時，採預約制；若緊急請另行致電。</p>
+            <div class="price-list" aria-label="服務費用">
+              <div class="price-row"><span>靈氣療癒｜首次體驗優惠價</span><span>NT$800</span></div>
+              <div class="price-row"><span>卜卦問事｜問一事</span><span>NT$700</span></div>
+              <div class="price-row"><span>新生兒命名／成人改名</span><span>NT$3000</span></div>
+              <div class="price-row"><span>收驚壓煞</span><span>隨喜</span></div>
+            </div>
+          </div>
+          <aside class="contact-box" aria-label="聯絡資訊">
+            <h3>澤奎本質療癒所</h3>
+            <p>顏老師</p>
+            <div class="contact-line"><strong>LINE ID</strong><span>@975nxiqa</span></div>
+            <div class="contact-line"><strong>地址</strong><span>預約後提供</span></div>
+            <a class="button primary" href="https://line.me/R/ti/p/@975nxiqa" target="_blank" rel="noopener">加入 LINE 預約</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="notes">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title">療癒隨筆</h2>
+          <p class="lead">從靈氣、姓名、卜卦、風水到修行體悟，記錄傳統智慧如何回到日常生活。</p>
+        </div>
+        <div class="notes-grid">
+          <a class="note-link" href="zenku_notes.html"><strong>靈氣</strong><span>能量與身心安頓</span></a>
+          <a class="note-link" href="zenku_notes.html"><strong>姓名之道</strong><span>文字、命格與共振</span></a>
+          <a class="note-link" href="zenku_notes.html"><strong>卜卦札記</strong><span>看見當下結構</span></a>
+          <a class="note-link" href="zenku_notes.html"><strong>風水空間</strong><span>氣場與生活秩序</span></a>
+          <a class="note-link" href="zenku_notes.html"><strong>修行體悟</strong><span>回到自己的練習</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title">常見問題</h2>
+          <p class="lead">若你仍在確認服務是否適合自己，可以先從常見問題了解流程、準備方式與服務界線。</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>靈氣是什麼？真的有效嗎？</summary>
+            <p>靈氣是一種溫和、非侵入式的能量療癒技術，源自日本，透過雙手引導宇宙生命能量，協助身心恢復平衡。它不取代醫療，而是補充與支持內在的自我修復力。</p>
+          </details>
+          <details>
+            <summary>我不是靈性體質，也能做靈氣嗎？</summary>
+            <p>可以。靈氣不是宗教，也不需要特殊信念或體質。只要讓自己的心保持敞開、願意接收，就能作用於身心層面。</p>
+          </details>
+          <details>
+            <summary>改名真的會改變命運嗎？</summary>
+            <p>名字不會魔法改命，但它是你與命運互動的一部分。若能與八字節奏、個性氣場貼合，名字會像一個協助你安住自我的符咒。</p>
+          </details>
+          <details>
+            <summary>卜卦是預測未來嗎？準不準？</summary>
+            <p>卜卦反映你當下的能量狀態與外部條件，並推演此狀態若持續發展可能走向的局勢。重點不是宿命預測，而是看清現在站在哪裡、往哪裡走會怎樣。</p>
+          </details>
+          <details>
+            <summary>什麼樣的情況需要收驚？</summary>
+            <p>常見情況包括小孩夜驚、無故發燒、成人驚嚇後失眠、情緒不穩、經過陰煞之地後身體不適等。只要覺得說不上來哪裡怪怪的，就可以考慮諮詢。</p>
+          </details>
+          <details>
+            <summary>收驚需要準備什麼？要燒符嗎？</summary>
+            <p>目前方式不涉及燒符或驅邪，只需要放鬆心情、願意回到自己的中心。通常不需攜帶供品，過程中會有簡單香火與靜心引導。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© 2025 Zenku Essence Studio. All rights reserved.</p><p>未經授權，不得轉載、摘錄或作商業用途。本網站內容僅供參考，無取代醫療建議之意。</p></footer>
+</body>
+</html>

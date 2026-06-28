@@ -1,1 +1,3 @@
-# Zenku Essence Studio
+﻿# Zenku Essence Studio
+
+Static website for GitHub Pages.

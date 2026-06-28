@@ -353,16 +353,19 @@ h1 {
   gap: 8px;
   margin-top: 18px;
   color: rgba(248, 245, 239, .84);
-  justify-items: center;
+  justify-items: stretch;
   text-align: center;
 }
 
-.lineage-flow span {
-  display: block;
+.lineage-flow > span {
+  display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.lineage-flow .arrow {
+.lineage-flow > .arrow {
   color: var(--gold-2);
   line-height: 1;
   font-size: 18px;
@@ -427,6 +430,25 @@ h1 {
   color: var(--gold-2);
 }
 
+.contact-action {
+  min-height: 34px;
+  padding: 5px 12px;
+  border: 1px solid rgba(203, 164, 128, .72);
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ivory);
+  background: rgba(248, 245, 239, .06);
+  font-weight: 700;
+}
+
+.contact-action:hover,
+.contact-action:focus {
+  background: rgba(203, 164, 128, .22);
+  color: var(--gold-2);
+}
+
 .button {
   min-height: 46px;
   margin-top: 20px;
@@ -444,8 +466,8 @@ h1 {
 }
 
 .button.secondary {
-  color: var(--slate);
-  background: transparent;
+  color: var(--ivory);
+  background: rgba(248, 245, 239, .07);
   border-color: var(--gold);
 }
 

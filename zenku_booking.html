@@ -7,22 +7,223 @@
   <title>預約諮詢｜澤奎本質療癒所</title>
   <link rel="icon" type="image/png" href="Logo.png?v=3">
   <link rel="shortcut icon" type="image/png" href="Logo.png?v=3">
-  <meta name="description" content="預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過 LINE、電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。">
+  <meta name="description" content="預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。">
   <link rel="stylesheet" href="zenku_pages.css?v=6">
   <!-- SEO-BEGIN -->
   <link rel="canonical" href="https://zenku-essence-studio.github.io/zenku_booking.html">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:type" content="website">
   <meta property="og:title" content="預約諮詢｜澤奎本質療癒所">
-  <meta property="og:description" content="預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過 LINE、電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。">
+  <meta property="og:description" content="預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。">
   <meta property="og:url" content="https://zenku-essence-studio.github.io/zenku_booking.html">
   <meta property="og:site_name" content="澤奎本質療癒所">
   <meta property="og:image" content="https://zenku-essence-studio.github.io/zenku-main-visual.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://zenku-essence-studio.github.io/#organization","name":"澤奎本質療癒所","alternateName":"Zenku Essence Studio","url":"https://zenku-essence-studio.github.io/","logo":"https://zenku-essence-studio.github.io/Logo.png","telephone":"0981-656225","sameAs":["https://m.me/zenkuessence"],"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","telephone":"0981-656225","url":"https://line.me/R/ti/p/@975nxiqa","availableLanguage":["zh-Hant"]},{"@type":"ContactPoint","contactType":"customer service","url":"https://m.me/zenkuessence","availableLanguage":["zh-Hant"]}]},{"@type":"WebSite","@id":"https://zenku-essence-studio.github.io/#website","url":"https://zenku-essence-studio.github.io/","name":"澤奎本質療癒所","publisher":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"},{"@type":"ContactPage","@id":"https://zenku-essence-studio.github.io/zenku_booking.html#webpage","url":"https://zenku-essence-studio.github.io/zenku_booking.html","name":"預約諮詢｜澤奎本質療癒所","description":"預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過 LINE、電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。","isPartOf":{"@id":"https://zenku-essence-studio.github.io/#website"},"about":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://zenku-essence-studio.github.io/#organization","name":"澤奎本質療癒所","alternateName":"Zenku Essence Studio","url":"https://zenku-essence-studio.github.io/","logo":"https://zenku-essence-studio.github.io/Logo.png","telephone":"0981-656225","sameAs":["https://m.me/zenkuessence"],"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","telephone":"0981-656225","availableLanguage":["zh-Hant"]},{"@type":"ContactPoint","contactType":"customer service","url":"https://m.me/zenkuessence","availableLanguage":["zh-Hant"]}]},{"@type":"WebSite","@id":"https://zenku-essence-studio.github.io/#website","url":"https://zenku-essence-studio.github.io/","name":"澤奎本質療癒所","publisher":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"},{"@type":"ContactPage","@id":"https://zenku-essence-studio.github.io/zenku_booking.html#webpage","url":"https://zenku-essence-studio.github.io/zenku_booking.html","name":"預約諮詢｜澤奎本質療癒所","description":"預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。","isPartOf":{"@id":"https://zenku-essence-studio.github.io/#website"},"about":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"}]}
   </script>
-  <!-- SEO-END --></head>
+  <!-- SEO-END -->
+  <style>
+    .form-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 42px;
+      align-items: start;
+    }
+
+    .booking-form {
+      display: grid;
+      gap: 26px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fffdf8;
+      box-shadow: 0 12px 28px rgba(45, 64, 81, .06);
+    }
+
+    .form-section {
+      display: grid;
+      gap: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .form-section:last-of-type {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .form-section h2 {
+      color: var(--slate);
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .field,
+    .choice-group {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field.full,
+    .choice-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label,
+    legend {
+      color: var(--slate);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .hint {
+      margin: 0;
+      color: #64716c;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      min-height: 44px;
+      padding: 10px 12px;
+      border: 1px solid rgba(45, 64, 81, .24);
+      border-radius: 6px;
+      color: var(--ink);
+      background: #fff;
+      font: inherit;
+      line-height: 1.5;
+    }
+
+    textarea {
+      min-height: 128px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid rgba(203, 164, 128, .35);
+      border-color: var(--gold);
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    .choice-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .choice-item {
+      display: grid;
+      grid-template-columns: 18px minmax(0, 1fr);
+      gap: 10px;
+      align-items: start;
+      padding: 12px;
+      border: 1px solid rgba(45, 64, 81, .16);
+      border-radius: 6px;
+      background: rgba(238, 241, 237, .35);
+    }
+
+    .choice-item input {
+      width: 18px;
+      min-height: 18px;
+      margin: 4px 0 0;
+    }
+
+    .choice-item strong {
+      display: block;
+      color: var(--slate);
+      line-height: 1.45;
+    }
+
+    .choice-item span {
+      display: block;
+      color: #64716c;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      padding-top: 2px;
+    }
+
+    .form-submit {
+      min-height: 46px;
+      padding: 10px 18px;
+      border: 1px solid var(--gold);
+      border-radius: 6px;
+      color: #1f2223;
+      background: var(--gold);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .form-submit:hover,
+    .form-submit:focus {
+      transform: translateY(-1px);
+    }
+
+    .note-box {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--mist);
+    }
+
+    .note-box h2,
+    .note-box h3 {
+      margin-bottom: 12px;
+      color: var(--slate);
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    .note-box p,
+    .note-box li {
+      color: #4d5652;
+    }
+
+    .note-box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .notice {
+      margin: 18px 0 0;
+      padding: 14px 16px;
+      border-left: 3px solid var(--gold);
+      color: #4d5652;
+      background: rgba(203, 164, 128, .12);
+    }
+
+    @media (max-width: 880px) {
+      .form-layout,
+      .field-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-form {
+        padding: 22px;
+      }
+    }
+  </style></head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="主導覽">
@@ -67,7 +268,6 @@
         <aside class="contact-box">
           <h3>澤奎本質療癒所</h3>
           <p>顏老師</p>
-          <div class="contact-line"><strong>LINE ID</strong><span><a class="contact-action" href="https://line.me/R/ti/p/@975nxiqa" target="_blank" rel="noopener">@975nxiqa</a></span></div>
           <div class="contact-line"><strong>電話</strong><span><a class="contact-action" href="tel:0981656225">0981-656225</a></span></div>
           <div class="contact-line"><strong>Messenger</strong><span><a class="contact-action" href="https://m.me/zenkuessence" target="_blank" rel="noopener">m.me/zenkuessence</a></span></div>
           <div class="contact-line"><strong>地址</strong><span>預約後提供</span></div>
@@ -76,20 +276,134 @@
     </section>
 
     <section class="section soft">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 class="section-title">預約前可以先準備</h2>
-          <p class="lead">不需要準備得很完整，只要先讓我們知道你目前最想處理的問題。</p>
-        </div>
-        <div class="card-grid">
-          <article class="card"><h3>想預約的服務</h3><p>靈氣、姓名、卜卦、收驚，或還不確定也可以先說明狀況。</p></article>
-          <article class="card"><h3>目前的困擾</h3><p>簡短描述身心狀態、事件背景，或想問的主題。</p></article>
-          <article class="card"><h3>可配合時間</h3><p>提供幾個方便的時段，收驚壓煞會再協助擇日擇時。</p></article>
-        </div>
+      <div class="wrap form-layout">
+        <form class="booking-form" id="booking-form" data-script-url="https://script.google.com/macros/s/AKfycbxqUDrj0Qv7-cFsBCf7hrm-1uqYn8Hr_yJMDkvf2SfVcnz3AdrLXMQg4GqdgWuTITbo2g/exec">
+          <section class="form-section" aria-labelledby="contact-title">
+            <h2 id="contact-title">基本資料</h2>
+            <div class="field-grid">
+              <div class="field">
+                <label for="name">姓名</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="phone">電話</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+              <div class="field">
+                <label for="birth-date">出生年月日</label>
+                <input id="birth-date" name="birth-date" type="date" autocomplete="bday" required>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="service-title">
+            <h2 id="service-title">想預約的服務</h2>
+            <fieldset class="choice-group full">
+              <legend>服務項目</legend>
+              <div class="choice-list">
+                <label class="choice-item"><input type="radio" name="service" value="卜卦問事" required><span><strong>卜卦問事</strong><span>適合已有明確問題，想釐清局勢與行動方向。</span></span></label>
+                <label class="choice-item"><input type="radio" name="service" value="靈氣療癒"><span><strong>靈氣療癒</strong><span>適合希望以溫和、非侵入方式安定身心。</span></span></label>
+                <label class="choice-item"><input type="radio" name="service" value="收驚壓煞"><span><strong>收驚壓煞</strong><span>適合近期受到驚嚇、氣場不穩，或需要簡儀淨化與安定。</span></span></label>
+                <label class="choice-item"><input type="radio" name="service" value="姓名命名／改名諮詢"><span><strong>姓名命名／改名諮詢</strong><span>可先登記諮詢，再確認是否適合進一步安排。</span></span></label>
+                <label class="choice-item"><input type="radio" name="service" value="尚不確定"><span><strong>尚不確定</strong><span>可以先描述狀況，由顏老師協助判斷適合的方向。</span></span></label>
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="form-section" aria-labelledby="detail-title">
+            <h2 id="detail-title">目前狀況</h2>
+            <div class="field-grid">
+              <div class="field full">
+                <label for="topic">想處理或詢問的主題</label>
+                <textarea id="topic" name="topic" required placeholder="例如：工作選擇、關係狀態、身心不安、近期受驚、姓名諮詢等。"></textarea>
+                <p class="hint">若是卜卦問事，請盡量整理成一事一問。</p>
+              </div>
+              <div class="field full">
+                <label for="background">補充背景</label>
+                <textarea id="background" name="background" placeholder="可簡短說明事件背景、目前狀態，或希望服務後獲得什麼協助。"></textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="time-title">
+            <h2 id="time-title">可預約時間</h2>
+            <div class="field-grid">
+              <div class="field">
+                <label for="first-time">第一順位</label>
+                <input id="first-time" name="first-time" type="text" required placeholder="例：週三晚上、週六下午">
+              </div>
+              <div class="field">
+                <label for="second-time">第二順位</label>
+                <input id="second-time" name="second-time" type="text" placeholder="例：平日 19:00 後">
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="agreement-title">
+            <h2 id="agreement-title">確認事項</h2>
+            <div class="choice-list">
+              <label class="choice-item"><input type="checkbox" name="boundary" required><span><strong>我理解本服務不取代醫療、法律、投資、心理諮商或其他專業意見。</strong></span></label>
+              <label class="choice-item"><input type="checkbox" name="fee" required><span><strong>我理解服務收費標準以網站預約頁公布內容為準。</strong></span></label>
+              <label class="choice-item"><input type="checkbox" name="contact-consent" required><span><strong>我同意澤奎本質療癒所依此表單內容與我聯繫預約事宜。</strong></span></label>
+            </div>
+          </section>
+
+          <div class="form-actions">
+            <button class="form-submit" type="submit">送出預約需求</button>
+            <p class="hint" id="form-status">預約表單送出後，顏老師將依表單內容與你聯繫。</p>
+          </div>
+        </form>
+
+        <aside class="note-box">
+          <h2>預約前提醒</h2>
+          <p>不需要準備得很完整，只要先讓我們知道你目前最想處理的問題。</p>
+          <ul>
+            <li>卜卦問事請盡量一事一問。</li>
+            <li>收驚壓煞須再協助確認日期與時段。</li>
+            <li>地址於預約確認後提供。</li>
+            <li>服務費用以網站預約頁公布內容為準。</li>
+          </ul>
+          <p class="notice">若有緊急狀況，請優先使用電話聯繫：0981-656225。</p>
+        </aside>
       </div>
     </section>
   </main>
 
   <footer class="site-footer"><p>© 2025 Zenku Essence Studio. All rights reserved.</p><p>未經授權，不得轉載、摘錄或作商業用途。本網站內容僅供參考，無取代醫療建議之意。</p></footer>
-</body>
+
+  <script>
+    document.getElementById('booking-form').addEventListener('submit', async function (event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const status = document.getElementById('form-status');
+      const scriptUrl = form.dataset.scriptUrl;
+
+      if (!scriptUrl) {
+        status.textContent = '預約系統尚未完成部署，目前不會送出。';
+        return;
+      }
+
+      const data = new FormData(form);
+      const payload = new URLSearchParams();
+      for (const [key, value] of data.entries()) {
+        payload.append(key, value);
+      }
+
+      status.textContent = '正在送出，請稍候。';
+      try {
+        await fetch(scriptUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+          },
+          body: payload.toString()
+        });
+        form.reset();
+        status.textContent = '已送出預約需求。顏老師將依表單內容與你聯繫。';
+      } catch (error) {
+        status.textContent = '送出時發生問題，請稍後再試，或改用電話聯繫。';
+      }
+    });
+  </script></body>
 </html>

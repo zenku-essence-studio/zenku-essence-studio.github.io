@@ -348,6 +348,21 @@ h1 {
   object-fit: cover;
 }
 
+.compact-portrait {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.compact-portrait img {
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 3 / 4;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 .lineage-flow {
   display: grid;
   gap: 8px;

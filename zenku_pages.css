@@ -333,6 +333,29 @@ h1 {
   object-position: center top;
 }
 
+.certificate-figure {
+  margin: 28px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.card img.certificate-image {
+  display: block;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin-bottom: 0;
+  background: #fff;
+}
+
+.certificate-figure figcaption {
+  margin-top: 10px;
+  color: #53605c;
+  font-size: 14px;
+  text-align: center;
+}
+
 .media-frame {
   border-radius: var(--radius);
   overflow: hidden;

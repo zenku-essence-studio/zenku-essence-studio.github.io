@@ -7,23 +7,27 @@
   <title>預約諮詢｜澤奎本質療癒所</title>
   <link rel="icon" type="image/png" href="Logo.png?v=3">
   <link rel="shortcut icon" type="image/png" href="Logo.png?v=3">
-  <meta name="description" content="預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。">
+  <meta name="description" content="先填寫澤奎本質療癒所的預約需求，確認服務與時間後再付款；收驚壓煞請於需要當日致電詢問。">
   <link rel="stylesheet" href="zenku_pages.css?v=6">
   <!-- SEO-BEGIN -->
   <link rel="canonical" href="https://zenku-essence-studio.github.io/zenku_booking.html">
   <meta property="og:locale" content="zh_TW">
   <meta property="og:type" content="website">
   <meta property="og:title" content="預約諮詢｜澤奎本質療癒所">
-  <meta property="og:description" content="預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。">
+  <meta property="og:description" content="先填寫澤奎本質療癒所的預約需求，確認服務與時間後再付款；收驚壓煞請於需要當日致電詢問。">
   <meta property="og:url" content="https://zenku-essence-studio.github.io/zenku_booking.html">
   <meta property="og:site_name" content="澤奎本質療癒所">
   <meta property="og:image" content="https://zenku-essence-studio.github.io/zenku-main-visual.png">
   <meta name="twitter:card" content="summary_large_image">
   <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://zenku-essence-studio.github.io/#organization","name":"澤奎本質療癒所","alternateName":"Zenku Essence Studio","url":"https://zenku-essence-studio.github.io/","logo":"https://zenku-essence-studio.github.io/Logo.png","telephone":"0981-656225","sameAs":["https://m.me/zenkuessence"],"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","telephone":"0981-656225","availableLanguage":["zh-Hant"]},{"@type":"ContactPoint","contactType":"customer service","url":"https://m.me/zenkuessence","availableLanguage":["zh-Hant"]}]},{"@type":"WebSite","@id":"https://zenku-essence-studio.github.io/#website","url":"https://zenku-essence-studio.github.io/","name":"澤奎本質療癒所","publisher":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"},{"@type":"ContactPage","@id":"https://zenku-essence-studio.github.io/zenku_booking.html#webpage","url":"https://zenku-essence-studio.github.io/zenku_booking.html","name":"預約諮詢｜澤奎本質療癒所","description":"預約澤奎本質療癒所的靈氣療癒、姓名命名改名、易經卜卦與收驚壓煞服務，可透過電話 0981-656225 或 Facebook Messenger 與顏老師聯繫。","isPartOf":{"@id":"https://zenku-essence-studio.github.io/#website"},"about":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://zenku-essence-studio.github.io/#organization","name":"澤奎本質療癒所","alternateName":"Zenku Essence Studio","url":"https://zenku-essence-studio.github.io/","logo":"https://zenku-essence-studio.github.io/Logo.png","telephone":"0981-656225","sameAs":["https://m.me/zenkuessence"],"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","telephone":"0981-656225","availableLanguage":["zh-Hant"]},{"@type":"ContactPoint","contactType":"customer service","url":"https://m.me/zenkuessence","availableLanguage":["zh-Hant"]}]},{"@type":"WebSite","@id":"https://zenku-essence-studio.github.io/#website","url":"https://zenku-essence-studio.github.io/","name":"澤奎本質療癒所","publisher":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"},{"@type":"ContactPage","@id":"https://zenku-essence-studio.github.io/zenku_booking.html#webpage","url":"https://zenku-essence-studio.github.io/zenku_booking.html","name":"預約諮詢｜澤奎本質療癒所","description":"先填寫澤奎本質療癒所的預約需求，確認服務與時間後再付款；收驚壓煞請於需要當日致電詢問。","isPartOf":{"@id":"https://zenku-essence-studio.github.io/#website"},"about":{"@id":"https://zenku-essence-studio.github.io/#organization"},"inLanguage":"zh-Hant"}]}
   </script>
   <!-- SEO-END -->
   <style>
+    .subhero-inner > .button {
+      justify-self: start;
+    }
+
     .form-layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 340px;
@@ -39,6 +43,11 @@
       border-radius: var(--radius);
       background: #fffdf8;
       box-shadow: 0 12px 28px rgba(45, 64, 81, .06);
+    }
+
+    #booking-form,
+    #fees {
+      scroll-margin-top: 90px;
     }
 
     .form-section {
@@ -249,41 +258,17 @@
   <main>
     <section class="subhero">
       <div class="subhero-inner">
-        <p class="eyebrow">預約｜費用</p>
+        <p class="eyebrow">預約流程</p>
         <h1>先說明你的狀況，我們一起確認適合的服務。</h1>
-        <p class="hero-copy">若對任何療癒項目有疑問，歡迎與顏老師聯繫。<br>收驚壓煞請於當日致電，由顏老師依當天狀況與個案需求協助判斷；特定日子與時辰不另行公告。</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap split">
-        <div>
-          <h2 class="section-title">服務費用</h2>
-          <div class="price-list">
-            <div class="price-row"><span>靈氣療癒</span><span style="white-space: normal;">NT$1700（首次體驗優惠價 <strong>NT$800</strong>）</span></div>
-            <div class="price-row"><span>靈氣療癒｜教師、護理人員七五折優惠</span><span>NT$1300</span></div>
-            <div class="price-row"><span>卜卦問事｜問一事</span><span>NT$700</span></div>
-            <div class="price-row"><span>新生兒命名／成人改名</span><span>NT$3000</span></div>
-            <div class="price-row"><span>收驚壓煞</span><span>隨喜</span></div>
-          </div>
-        </div>
-        <aside class="contact-box">
-          <h3>聯絡與匯款資訊</h3>
-          <div class="contact-line"><strong>電話</strong><span><a class="contact-action" href="tel:0981656225">0981-656225</a></span></div>
-          <div class="contact-line"><strong>Messenger</strong><span><a class="contact-action" href="https://m.me/zenkuessence" target="_blank" rel="noopener">m.me/zenkuessence</a></span></div>
-          <div class="contact-line"><strong>地址</strong><span>預約後提供</span></div>
-          <div class="contact-line"><strong>匯款銀行</strong><span>國泰（013）</span></div>
-          <div class="contact-line"><strong>分行</strong><span>板東分行</span></div>
-          <div class="contact-line"><strong>匯款帳號</strong><span>205506121672</span></div>
-          <div class="contact-line"><strong>戶名</strong><span>顏澤暉</span></div>
-          <p>匯款後請透過 Messenger 私訊告知轉出帳號後五碼，方便對帳。</p>
-        </aside>
+        <p class="hero-copy">先送出預約需求，顏老師會與你確認服務與時間；確認後再付款。若還不確定選哪項服務，表單可以選「尚不確定」。<br>收驚壓煞請於當日致電，由顏老師依當天狀況與個案需求協助判斷；特定日子與時辰不另行公告。</p>
+        <a class="button" href="#booking-form">填寫預約需求</a>
       </div>
     </section>
 
     <section class="section soft">
       <div class="wrap form-layout">
         <form class="booking-form" id="booking-form" data-script-url="https://script.google.com/macros/s/AKfycbyZnkGEIhd_QDFEfy4ztZXPA-A9u5pXkdU9AdVmF2NXhPMo_VaOPLC6vtinQzaNVitUHg/exec">
+          <div><h2>填寫預約需求</h2><p class="hint">送出後先確認服務與時間，再依確認內容付款。可先<a href="#fees">查看服務費用</a>。</p></div>
           <section class="form-section" aria-labelledby="contact-title">
             <h2 id="contact-title">基本資料</h2>
             <div class="field-grid">
@@ -417,7 +402,7 @@
 
           <div class="form-actions">
             <button class="form-submit" type="submit">送出預約需求</button>
-            <p class="hint" id="form-status">預約表單送出後，顏老師將依表單內容與你聯繫。</p>
+            <p class="hint" id="form-status">送出需求後，顏老師將與你確認服務與時間；確認後再付款。</p>
           </div>
         </form>
 
@@ -425,12 +410,39 @@
           <h2>預約前提醒</h2>
           <p>不需要準備得很完整，只要先讓我們知道你目前最想處理的問題。</p>
           <ul>
+            <li>先送出需求，確認服務與時間後再付款。</li>
             <li>卜卦問事請盡量一事一問。</li>
             <li>收驚壓煞請於當日致電詢問，由顏老師依狀況協助判斷。</li>
             <li>地址於預約確認後提供。</li>
             <li>服務費用以網站預約頁公布內容為準。</li>
           </ul>
           <p class="notice">若有緊急狀況，請優先使用電話聯繫：0981-656225。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="fees">
+      <div class="wrap split">
+        <div>
+          <h2 class="section-title">服務費用</h2>
+          <div class="price-list">
+            <div class="price-row"><span>靈氣療癒</span><span style="white-space: normal;">NT$1700（首次體驗優惠價 <strong>NT$800</strong>）</span></div>
+            <div class="price-row"><span>靈氣療癒｜教師、護理人員七五折優惠</span><span>NT$1300</span></div>
+            <div class="price-row"><span>卜卦問事｜問一事</span><span>NT$700</span></div>
+            <div class="price-row"><span>新生兒命名／成人改名</span><span>NT$3000</span></div>
+            <div class="price-row"><span>收驚壓煞</span><span>隨喜</span></div>
+          </div>
+        </div>
+        <aside class="contact-box">
+          <h3>聯絡與匯款資訊</h3>
+          <div class="contact-line"><strong>電話</strong><span><a class="contact-action" href="tel:0981656225">0981-656225</a></span></div>
+          <div class="contact-line"><strong>Messenger</strong><span><a class="contact-action" href="https://m.me/zenkuessence" target="_blank" rel="noopener">m.me/zenkuessence</a></span></div>
+          <div class="contact-line"><strong>地址</strong><span>預約後提供</span></div>
+          <div class="contact-line"><strong>匯款銀行</strong><span>國泰（013）</span></div>
+          <div class="contact-line"><strong>分行</strong><span>板東分行</span></div>
+          <div class="contact-line"><strong>匯款帳號</strong><span>205506121672</span></div>
+          <div class="contact-line"><strong>戶名</strong><span>顏澤暉</span></div>
+          <p>請先送出需求並確認服務與時間，再依約定方式付款。匯款後請透過 Messenger 私訊告知轉出帳號後五碼，方便對帳。</p>
         </aside>
       </div>
     </section>
@@ -472,7 +484,7 @@
           body: payload.toString()
         });
         form.reset();
-        status.textContent = '已送出預約需求。顏老師將依表單內容與你聯繫。';
+        status.textContent = '已送出預約需求。顏老師將與你確認服務與時間；確認後再付款。';
       } catch (error) {
         status.textContent = '送出時發生問題，請稍後再試，或改用電話聯繫。';
       }

@@ -91,6 +91,7 @@
     }
 
     input,
+    select,
     textarea {
       width: 100%;
       min-height: 44px;
@@ -109,6 +110,7 @@
     }
 
     input:focus,
+    select:focus,
     textarea:focus {
       outline: 2px solid rgba(203, 164, 128, .35);
       border-color: var(--gold);
@@ -332,14 +334,74 @@
 
           <section class="form-section" aria-labelledby="time-title">
             <h2 id="time-title">可預約時間</h2>
+            <p class="hint">請選擇方便的固定時段；若都不合適，選「其他時間需求」並在下方補充。實際日期會再確認。</p>
             <div class="field-grid">
               <div class="field">
                 <label for="first-time">第一順位</label>
-                <input id="first-time" name="first-time" type="text" required placeholder="例：週三晚上、週六下午">
+                <select id="first-time" name="first-time" required>
+                  <option value="" selected disabled>請選擇第一順位</option>
+                  <optgroup label="週一至週五">
+                    <option value="週一 19:00～20:00">週一 19:00～20:00</option>
+                    <option value="週一 20:30～21:30">週一 20:30～21:30</option>
+                    <option value="週二 19:00～20:00">週二 19:00～20:00</option>
+                    <option value="週二 20:30～21:30">週二 20:30～21:30</option>
+                    <option value="週三 19:00～20:00">週三 19:00～20:00</option>
+                    <option value="週三 20:30～21:30">週三 20:30～21:30</option>
+                    <option value="週四 19:00～20:00">週四 19:00～20:00</option>
+                    <option value="週四 20:30～21:30">週四 20:30～21:30</option>
+                    <option value="週五 19:00～20:00">週五 19:00～20:00</option>
+                    <option value="週五 20:30～21:30">週五 20:30～21:30</option>
+                  </optgroup>
+                  <optgroup label="週六、週日">
+                    <option value="週六 09:00～10:00">週六 09:00～10:00</option>
+                    <option value="週六 10:30～11:30">週六 10:30～11:30</option>
+                    <option value="週六 14:00～15:00">週六 14:00～15:00</option>
+                    <option value="週六 15:30～16:30">週六 15:30～16:30</option>
+                    <option value="週六 17:00～18:00">週六 17:00～18:00</option>
+                    <option value="週日 09:00～10:00">週日 09:00～10:00</option>
+                    <option value="週日 10:30～11:30">週日 10:30～11:30</option>
+                    <option value="週日 14:00～15:00">週日 14:00～15:00</option>
+                    <option value="週日 15:30～16:30">週日 15:30～16:30</option>
+                    <option value="週日 17:00～18:00">週日 17:00～18:00</option>
+                  </optgroup>
+                  <option value="其他時間需求">其他時間需求（請於下方補充）</option>
+                </select>
               </div>
               <div class="field">
-                <label for="second-time">第二順位</label>
-                <input id="second-time" name="second-time" type="text" placeholder="例：平日 19:00 後">
+                <label for="second-time">第二順位（選填）</label>
+                <select id="second-time" name="second-time">
+                  <option value="">不選第二順位</option>
+                  <optgroup label="週一至週五">
+                    <option value="週一 19:00～20:00">週一 19:00～20:00</option>
+                    <option value="週一 20:30～21:30">週一 20:30～21:30</option>
+                    <option value="週二 19:00～20:00">週二 19:00～20:00</option>
+                    <option value="週二 20:30～21:30">週二 20:30～21:30</option>
+                    <option value="週三 19:00～20:00">週三 19:00～20:00</option>
+                    <option value="週三 20:30～21:30">週三 20:30～21:30</option>
+                    <option value="週四 19:00～20:00">週四 19:00～20:00</option>
+                    <option value="週四 20:30～21:30">週四 20:30～21:30</option>
+                    <option value="週五 19:00～20:00">週五 19:00～20:00</option>
+                    <option value="週五 20:30～21:30">週五 20:30～21:30</option>
+                  </optgroup>
+                  <optgroup label="週六、週日">
+                    <option value="週六 09:00～10:00">週六 09:00～10:00</option>
+                    <option value="週六 10:30～11:30">週六 10:30～11:30</option>
+                    <option value="週六 14:00～15:00">週六 14:00～15:00</option>
+                    <option value="週六 15:30～16:30">週六 15:30～16:30</option>
+                    <option value="週六 17:00～18:00">週六 17:00～18:00</option>
+                    <option value="週日 09:00～10:00">週日 09:00～10:00</option>
+                    <option value="週日 10:30～11:30">週日 10:30～11:30</option>
+                    <option value="週日 14:00～15:00">週日 14:00～15:00</option>
+                    <option value="週日 15:30～16:30">週日 15:30～16:30</option>
+                    <option value="週日 17:00～18:00">週日 17:00～18:00</option>
+                  </optgroup>
+                  <option value="其他時間需求">其他時間需求（請於下方補充）</option>
+                </select>
+              </div>
+              <div class="field full">
+                <label for="special-time">特殊時間需求（選填）</label>
+                <textarea id="special-time" name="special-time" placeholder="例如：希望安排平日早上或下午，週二或週四較方便。"></textarea>
+                <p class="hint">若上述時段不方便，可在這裡補充希望的日期或時間；能否安排會再與你確認。</p>
               </div>
             </div>
           </section>
@@ -389,6 +451,11 @@
       }
 
       const data = new FormData(form);
+      const specialTime = String(data.get('special-time') || '').trim();
+      if (specialTime) {
+        const secondTime = String(data.get('second-time') || '').trim();
+        data.set('second-time', (secondTime ? secondTime + '\n' : '') + '特殊時間需求：' + specialTime);
+      }
       const payload = new URLSearchParams();
       for (const [key, value] of data.entries()) {
         payload.append(key, value);
